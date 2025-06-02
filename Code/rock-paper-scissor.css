@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    background-color: #020100;
+    text-align: center;
+    color: #FDFFFC;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 70vmin; */
+    /* width: 70vmin; */
+    border: 2px solid #FDFFFC;
+    margin: auto;
+}
+
+.rock-paper-scissor-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+    height: 70vmin;
+    width: 70vmin;
+    gap: 2rem;
+}
+
+
+#game-pictures button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 15vmin; 
+    height: 15vmin; 
+}
+
+
+#game-pictures button img {
+    width: 13vmin;        
+    height: 13vmin;       
+    object-fit: cover;   
+    border-radius: 50%; 
+    /* border: 5px solid #fff; */
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.346);
+    
+    transition: transform 0.2s;
+}
+
+#game-pictures button.selected img {
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.963);
+    border: 5px solid;
+    border-color: #FFD700; 
+}
+
+#game-pictures button.computer-selected img {
+    transform: scale(1.08);
+    border: 5px solid;
+    border-color: #fcfcfc;
+    box-shadow: 0 4px 16px rgb(195, 255, 0);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#game-pictures button img:hover {
+    transform: scale(1.08);
+}
+
+
+.other-stuffs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1.2rem;
+
+}
+
+
+.score-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 4vmin;
+    margin-bottom: 1rem;
+}
+
+.user, .computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user p, .computer p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+#reset{
+    background: #D9FFF5;
+    color: #020100;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+
+}
+
+#reset:hover{
+    background: #F1FFC4;
+    color: #2F243A;
+    transform: scale(1.08);
+}
+

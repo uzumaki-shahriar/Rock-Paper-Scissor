@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="rock-paper-scissor.css">
+</head>
+
+<body>
+
+    <main>
+        <h1>Rock-Paper-Scissor</h1>
+        <div class="game">
+            <div class="rock-paper-scissor-container">
+                <div id="game-pictures">
+                    <button id="rock">
+                        <img src="../Images/rock.png" alt="">
+                    </button>
+                    <button id="paper">
+                        <img src="../Images/paper.png" alt="">
+                    </button>
+                    <button id="scissor">
+                        <img src="../Images/scissors.png" alt="">
+                    </button>
+                </div>
+                <div class="other-stuffs">
+                    <h2>Score</h2>
+                    <div class="score-row">
+                        <div class="user">
+                            <p id="user-score">0</p>
+                            <span>User</span>
+                        </div>
+                        <div class="computer">
+                            <p id="computer-score">0</p>
+                            <span>Computer</span>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <h2>Result</h2>
+                        <p id="result-text">Make your move!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reset-btn">
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="rock-paper-scissor.js"></script>
+</body>
+
+</html>
